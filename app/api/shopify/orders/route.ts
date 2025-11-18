@@ -1,0 +1,20 @@
+import { NextResponse } from 'next/server';
+import { shopifyFetch } from '@/lib/shopify';
+
+export async function GET(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const limit = searchParams.get('limit') || '250';
+    const status = searchParams.get('status') || 'any';
+
+    const data = await shopifyFetch(`/orders.json?limit=${limit}&status=${status}`);
+
+    return NextResponse.json(data);
+  } catch (error: any) {
+    console.error('Error fetching orders:', error);
+    return NextResponse.json(
+      { error: error.message || 'Failed to fetch orders' },
+      { status: 500 }
+    );
+  }
+}
