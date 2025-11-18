@@ -2,6 +2,14 @@
 
 A comprehensive, full-featured data visualization dashboard for Shopify stores. This application extracts and visualizes **all available data** from the Shopify Admin API, providing deep insights into your store's performance, inventory, customers, and more.
 
+## 🚀 Quick Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/shopify-visualizer&env=SHOPIFY_STORE_DOMAIN,SHOPIFY_ACCESS_TOKEN&envDescription=Shopify%20API%20credentials%20required&envLink=https://github.com/yourusername/shopify-visualizer/blob/main/DEPLOYMENT.md)
+
+**One-click deployment!** Just add your Shopify credentials and you're live in minutes.
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+
 ## Features
 
 ### 📊 Analytics Dashboard
@@ -137,6 +145,29 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 npm run build
 npm start
 ```
+
+## 🌐 Deployment
+
+### Deploy to Vercel (Recommended)
+
+This application is optimized for Vercel deployment:
+
+1. **Quick Deploy**: Click the "Deploy to Vercel" button above
+2. **Manual Deploy**: Follow the [detailed deployment guide](./DEPLOYMENT.md)
+3. **Auto-deploy**: Push to GitHub and connect to Vercel for automatic deployments
+
+**Key Features for Vercel:**
+- ✅ Optimized build configuration
+- ✅ Image optimization for Shopify CDN
+- ✅ Environment variable management
+- ✅ Automatic HTTPS and CDN
+- ✅ Zero-config deployment
+
+**Environment Variables Required:**
+- `SHOPIFY_STORE_DOMAIN` - Your Shopify store domain (e.g., `mystore.myshopify.com`)
+- `SHOPIFY_ACCESS_TOKEN` - Your Shopify Admin API access token
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for complete deployment instructions, troubleshooting, and advanced configuration.
 
 ## Project Structure
 

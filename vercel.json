@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "SHOPIFY_STORE_DOMAIN": "@shopify_store_domain",
+    "SHOPIFY_ACCESS_TOKEN": "@shopify_access_token"
+  }
+}
